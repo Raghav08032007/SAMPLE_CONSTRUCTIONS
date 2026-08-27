@@ -1,0 +1,68 @@
+/* SRM Homes Design Tokens & Core Variables */
+
+:root {
+  /* Primary Accent: Terracotta Warm Palette */
+  --color-primary-50: #fff7f2;
+  --color-primary-100: #ffeedb;
+  --color-primary-200: #ffd7b5;
+  --color-primary-300: #ffb982;
+  --color-primary-400: #f9904d;
+  --color-primary-500: #c25e2e;
+  --color-primary-600: #b44e23;
+  --color-primary-700: #963c1c;
+  --color-primary-800: #79331d;
+  --color-primary-900: #632c1b;
+
+  /* Neutral Scale */
+  --color-sand: #f5f2eb;
+  --color-concrete: #e2ded7;
+  --color-charcoal: #1c1b18;
+  --color-slate: #4a4843;
+  --color-card-bg: #ffffff;
+  --color-border: #e6e1d8;
+
+  /* Semantic Colors */
+  --color-success-bg: #edf7ed;
+  --color-success-text: #1e4620;
+  --color-warning-bg: #fff4e5;
+  --color-warning-text: #663c00;
+  --color-error-bg: #fdeded;
+  --color-error-text: #5f2120;
+
+  /* Modular Type Scale */
+  --font-heading: 'Cinzel', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+
+  /* Elevation Tokens (Warm-toned subtle shadows) */
+  --shadow-warm-sm: 0 4px 12px -2px rgba(194, 94, 46, 0.08);
+  --shadow-warm-md: 0 10px 25px -5px rgba(194, 94, 46, 0.12);
+  --shadow-warm-lg: 0 20px 40px -10px rgba(194, 94, 46, 0.18);
+  --shadow-warm-inner: inset 0 2px 4px 0 rgba(194, 94, 46, 0.06);
+
+  /* Architectural Soft-Rounded Radius */
+  --radius-architectural: 0.75rem;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-sand);
+    color: var(--color-charcoal);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+  }
+}
